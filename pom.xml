@@ -25,6 +25,12 @@
             <artifactId>Component-specification</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>org.raf</groupId>
+            <artifactId>GoogleDriveRepository</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>runtime</scope>
+        </dependency>
     </dependencies>
 
 </project>
