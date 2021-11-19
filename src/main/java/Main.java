@@ -1,3 +1,4 @@
+import java.nio.file.Paths;
 import java.util.Scanner;
 
 public class Main {
@@ -66,7 +67,11 @@ public class Main {
                         System.out.println("File successfuly moved");
                         break;
                     case "listFiles":
-                        repository.ListFiles();
+                        System.out.println("Enter the file to be searched for ");
+                        String file_name = sc.nextLine();
+                        System.out.println("Enter the directory where to search ");
+                        String dir_path = sc.nextLine();
+                        repository.ListFiles(file_name, dir_path);
                         break;
                     case "deleteFile":
                         System.out.println("Enter name of your file you want to delete: ");
